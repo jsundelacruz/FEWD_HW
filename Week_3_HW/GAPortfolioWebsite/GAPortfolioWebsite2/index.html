@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Justine Sun Dela Cruz</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header-fixed.css">
+	<link href='http://fonts.googleapis.com/css?family=Karla:300,400,700,900,400italic|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="index.html">Justine Sun Dela Cruz</a></h1>
+
+		<nav>
+			<a href="index.html">Work</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+	</div>
+
+</header>
+
+<div class="header-fixed-placeholder"></div>
+
+<div class="main">
+	<p>
+		<h1>Front end web development</h1>
+	</p>
+
+	
+	<p>
+		<h2>The work featured here has been completed for <a href="http://generalassembly.com" target="_blank" alt="General Assembly">General Assembly's</a> winter 2015-16 cohort for Front End Development Web Development, where I'm currently learning how to code HTML, CSS, Javascript and jQuery. Check out some of my projects here, or view my <a href="http://github.com/jsundelacruz" target="_blank" alt="Github: jsundelacruz">Github</a>.</h2> 
+	</p>
+
+	<div class="projects">
+		<ul>
+		<li>
+			<a href="citipix.html">
+			<img src="imgs/work/citipix_thumb.png" alt="CitiPix"/>
+			</a>
+
+			<div class="description">
+				<h2>Citipix</h2>
+				<h3>Description of project.</h3>
+			</div>
+
+		</li>
+
+		<li>
+			<a href="startupmatchmaker.html">
+			<img src="imgs/work/startup_matchmaker_thumb.png" alt="Startup Matchmaker" />
+			</a>
+			
+			<div class="description">
+				<h2>Startup Matchmaker</h2>
+				<h3>Description of project.</h3>
+			</div>
+
+		</li>
+		</ul>
+	</div>
+
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 600){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+</body>
+</html>

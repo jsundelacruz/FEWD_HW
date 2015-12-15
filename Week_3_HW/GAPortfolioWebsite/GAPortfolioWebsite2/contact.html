@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Contact Justine</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header-fixed.css">
+	<link href='http://fonts.googleapis.com/css?family=Karla:300,400,700,900,400italic|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="index.html">Justine Sun Dela Cruz</a></h1>
+
+		<nav>
+			<a href="index.html">Work</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+	</div>
+
+</header>
+
+<div class="header-fixed-placeholder"></div>
+
+<div class="main">
+	<h1>Let's connect!</h1>	
+		<div class="contact">
+			<h2> 
+				<p>
+					<ul>
+					<li>+1 613 618 4187	
+					<li><a href="mailto:justinesundelacruz@gmail.com" target="_blank">justinesundelacruz@gmail.com</a>
+				</p>
+				<br />
+
+				<hr width="500"/>
+
+				<br />
+				<p>
+					<a href="http://github.com/jsundelacruz" target="_blank">github</a>
+					<br>
+					<br><a href="http://twitter.com/jsundelacruz" target="_blank">twitter</a>
+					<br>
+					<br><a href="http://instagram.com/jsundelacruz" target="_blank">instagram</a>
+					<br>
+					<br><a href="https://www.linkedin.com/in/jsundelacruz" target="_blank">linkedin</a>
+				</p>
+			</h2>
+		</div>
+</div>
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 600){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+</html>
