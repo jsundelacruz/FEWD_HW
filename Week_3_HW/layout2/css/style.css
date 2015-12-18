@@ -1,0 +1,37 @@
+.placeholder {
+  background: rgba(255, 0, 0, 0.5);
+  height: 150px;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+header {
+	width: 100%;
+}
+
+.main {
+	width: 60%;
+	float:left;
+}
+
+
+.left {
+	width:20%;
+	float:left;
+}
+
+.right {
+	width:20%;
+	float:right;
+}
+
+footer {
+	float: left;
+	width: 100%;
+}
+
+.clearfix {
+	clear:both;
+}

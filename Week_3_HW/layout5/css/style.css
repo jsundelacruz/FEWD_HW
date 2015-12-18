@@ -1,0 +1,79 @@
+.placeholder {
+  background: rgba(255, 0, 0, 0.5);
+  height: 150px;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+header {
+	width: 25%;
+	float: left;
+}
+
+header .placeholder {
+	height:90px;
+}
+nav {
+	width:60%;
+	float:right;
+}
+
+.navitem {
+	width:20%;
+	float:left;
+	padding-top: 30px
+}
+ 
+.navitem .placeholder {
+	height:20px;
+}
+
+
+aside {
+	width:20%;
+	float:left;
+	clear:left;
+}
+
+aside .placeholder {
+	height:725px;
+}
+
+.topbanner {
+	width:80%;
+	float: left;
+}
+
+.maincontent {
+	width:60%;
+	float:left;
+}
+
+.maincontent .placeholder {
+	height:300px;
+}
+
+.mainside {
+	width:20%;
+	float:left;
+}
+
+.mainside .placeholder {
+	height:300px;
+}
+
+.section-small {
+	float:left;
+	width: 20%;
+}
+
+footer {
+	float: left;
+	width: 100%;
+}
+
+.clearfix {
+	clear:both;
+}
