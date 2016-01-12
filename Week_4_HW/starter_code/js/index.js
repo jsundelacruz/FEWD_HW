@@ -1,11 +1,8 @@
 $(document).ready(function() {
 
 
-$("a").click(function() {
+$("a").click(function(event) {
   event.preventDefault();
-  $("<div>")
-    .append("default" + event.type + "prevented")
-    .appendTo("#log");
 });
 
 
@@ -19,25 +16,17 @@ $('.readmore').click(function() {
 
 
 $('.readless').click(function() {
-  // $('.readmore').show();  
-  $('.show-this-on-click').slideUp();
-  $('.readless').hide(); 
 
-  setTimeout(function(){
-    $('.readmore').show()}
-    , 350)
-  
+  $('.show-this-on-click').slideUp();
+  $('.readless').hide();
+  $('.readmore').show();
+
 });
 
 $(".learnmore").click(function(){
-  $(".learnmoretext").show; 
+  $(".learnmoretext").show;
   $(".learnmoretext").slideDown();
   $(".learnmore").hide();
 });
 
 }); //end ready
-
-
-
-
-
