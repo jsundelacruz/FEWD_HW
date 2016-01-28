@@ -13,7 +13,7 @@ $(document).ready(function() {
 		} else if (city == "Austin" || city == "ATX") {
 			$('body').addClass('austin');
 		} else if (city == "Sydney" || city == "SYD") {
-			$('body').addClass('la');
+			$('body').addClass('sydney');
 		};
 	});
 
